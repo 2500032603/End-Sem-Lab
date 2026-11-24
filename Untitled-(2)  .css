@@ -1,0 +1,74 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Header */
+header {
+  background-color: #2563eb;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* Student List */
+.student-list {
+  text-align: center;
+  padding: 25px;
+  min-height: 70vh;
+}
+
+.student-list h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Student Cards */
+.student-card {
+  background-color: white;
+  margin: 15px auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.student-card h3 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.student-card p {
+  margin: 8px;
+  font-size: 16px;
+}
+
+/* Pass and Fail */
+.pass {
+  color: green;
+  font-weight: bold;
+}
+
+.fail {
+  color: red;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}

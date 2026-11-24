@@ -1,0 +1,63 @@
+
+import React from "react";
+import "./App.css";
+
+function Header() {
+  return (
+    <header>
+      <h1>Student Management System</h1>
+      <p>Welcome to Student Dashboard</p>
+    </header>
+  );
+}
+
+function StudentList() {
+  const students = [
+    { id: 1, name: "Ashok", marks: 85 },
+    { id: 2, name: "Rahul", marks: 72 },
+    { id: 3, name: "Priya", marks: 35 },
+    { id: 4, name: "Sneha", marks: 90 },
+    { id: 5, name: "Arjun", marks: 28 }
+  ];
+
+  return (
+    <div className="student-list">
+      <h2>Student List</h2>
+
+      {students.map((student) => (
+        <div className="student-card" key={student.id}>
+          <h3>{student.name}</h3>
+          <p>Marks: {student.marks}</p>
+          <p>
+            Result:{" "}
+            <span className={
+              student.marks >= 40 ? "pass" : "fail"
+            }>
+              {student.marks >= 40 ? "Pass" : "Fail"}
+            </span>
+          </p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <footer>
+      <p>© 2026 Student Management System</p>
+    </footer>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <Header />
+      <StudentList />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
